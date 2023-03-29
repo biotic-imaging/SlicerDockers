@@ -3,7 +3,7 @@
 ARG VERSION="latest"
 
 FROM stevepieper/slicer:${VERSION}
-MAINTAINER pieper@isomics.com
+# MAINTAINER pieper@isomics.com
 
 ARG SLICER_EXTS
 

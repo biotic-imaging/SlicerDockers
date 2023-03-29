@@ -2,7 +2,7 @@
 # (based on https://github.com/dit4c/dockerfile-dit4c-container-slicer)
 
 FROM stevepieper/x11
-MAINTAINER pieper@isomics.com
+# MAINTAINER pieper@isomics.com
 
 RUN apt-get update
 

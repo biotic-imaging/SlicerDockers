@@ -8,12 +8,11 @@ It includes:
 * slicer: a binary distribution version of Slicer you can connect to
 * slicer-chronicle: an example of a customized slicer
 
-The build.sh script shows how to make the dockers (change the account
-from stevepieper to your docker hub name)
+The build.sh script shows how to make the docker containers.
 
 Then run the container with a command like this:
 
-`docker run -d -p 8080:8080 --name slicer stevepieper/slicer:5.0.3`
+`docker run -d -p 8080:8080 --name slicer biotic-imaging/slicer:5.0.3`
 
 then open `localhost:8080` in your browser and click the "X11 Session" button.
 
@@ -46,7 +45,7 @@ Then copy this file myScript.py into /tmp/shared
 
 Run this script with a command like the following:
 
-docker run -v /tmp/shared:/tmp/shared -p 8080:8080 --rm -it --env SLICER_ARGUMENTS="--python-script /tmp/shared/myScript.py" stevepieper/slicer
+$ docker run -v /tmp/shared:/tmp/shared -p 8080:8080 --rm -it --env SLICER_ARGUMENTS="--python-script /tmp/shared/myScript.py" biotic-imaging/slicer
 
 it should print some diagnostic info and then exit.
 

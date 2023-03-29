@@ -5,7 +5,7 @@
 ARG VERSION="latest"
 
 FROM stevepieper/base:${VERSION}
-MAINTAINER pieper@isomics.com
+# MAINTAINER pieper@isomics.com
 
 # Install
 # - MESA DRI drivers for software GLX rendering
